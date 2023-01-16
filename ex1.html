@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Quiz JavaScript</h1>
+    <p>What will be the output of thw following JavaScript code?</p>
+    <ul>
+        <div>
+        <input type="checkbox" name="primero" id="uno">
+        <label for="uno">10</label><br>
+        <input type="checkbox" name="segundo" id="dos">
+        <label for="dos">50</label><br>
+        <input type="checkbox" name="tercero" id="tres">
+        <label for="tres">5</label><br>
+        <input type="checkbox" name="cuarto" id="cuatro">
+        <label for="cuatro">Error</label>
+    </div>
+    </ul>
+    
+    <input type="button" id="cinco" value="Check answer"></button>
+    <script>
+        
+        
+            document.getElementById('cinco').onclick = function(){
+            this.value="Hide";}
+            
+            var micheck= document.getElementById('uno');
+        var msg=document.getElementById('msg');
+        micheck.addEventListener('click', function(){
+            if(micheck.checked){
+                document.textContent='Corrrect'
+            }
+
+        });
+
+        
+    </script>
+</body>
+</html>
